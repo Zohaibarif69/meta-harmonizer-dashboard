@@ -1,0 +1,8 @@
+query,match1,match1_score,method
+sample_col_8,biological_sex,0.96,exact
+column_4,disease_category,0.92,exact
+column_2,biological_sex,0.87,fuzzy
+sample_col_9,specimen_location,0.83,fuzzy
+column_3,specimen_location,0.78,semantic
+sample_col_7,disease_category,0.72,semantic
+column_5,body_mass_index,0.65,llm

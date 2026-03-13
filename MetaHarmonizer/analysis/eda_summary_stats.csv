@@ -1,0 +1,17 @@
+metric,value
+Total Rows,707
+Total Columns,141
+Numeric Columns,117
+Categorical Columns,24
+Datetime-like Columns,0
+Mixed-type Columns,0
+Columns >70% Missing,116
+Columns <30% Missing,18
+Completely Empty Columns,104
+Duplicate Rows,0
+Constant/Empty Columns,109
+HIGH Usability Columns,15
+MODERATE Usability Columns,6
+LOW Usability Columns,11
+UNUSABLE Columns,109
+Avg Missing % per Column,83.6%

@@ -1,0 +1,11 @@
+query,stage,method,match1,match1_score,match2,match2_score,match3,match3_score
+column_1,1,exact,age_years,0.95,age_in_years,0.92,age,0.88
+column_2,2,fuzzy,biological_sex,0.87,sex,0.85,gender,0.80
+column_3,3,semantic,specimen_location,0.78,sample_source,0.75,location,0.70
+column_4,1,exact,disease_category,0.92,disease_name,0.88,disease,0.85
+column_5,4,llm,body_mass_index,0.65,bmi,0.62,weight_index,0.58
+sample_col_6,2,fuzzy,age_years,0.81,biological_sex,0.79,specimen_location,0.75
+sample_col_7,3,semantic,disease_category,0.72,body_mass_index,0.69,biological_sex,0.65
+sample_col_8,1,exact,biological_sex,0.96,sex,0.94,gender,0.91
+sample_col_9,2,fuzzy,specimen_location,0.83,sample_source,0.81,location,0.77
+sample_col_10,3,semantic,age_years,0.75,age_in_years,0.72,age,0.68

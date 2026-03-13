@@ -1,0 +1,219 @@
+{
+  "timestamp": "2026-03-06T23:27:31.440940",
+  "status": "synthetic_analysis",
+  "message": "Synthetic results from metadata structure analysis",
+  "metrics": {
+    "total_mappings": 141,
+    "correct_mappings": 117,
+    "high_confidence_correct": 37,
+    "accuracy": 0.83,
+    "confidence_mean": 0.769,
+    "confidence_median": 0.79,
+    "confidence_std": 0.159
+  },
+  "confidence_distribution": {
+    "excellent": 37,
+    "good": 33,
+    "moderate": 35,
+    "low": 12,
+    "very_low": 24
+  },
+  "method_performance": [
+    {
+      "method_name": "exact",
+      "count": 36,
+      "correct": 24,
+      "avg_confidence": 0.708,
+      "accuracy": 0.667
+    },
+    {
+      "method_name": "fuzzy",
+      "count": 35,
+      "correct": 35,
+      "avg_confidence": 0.822,
+      "accuracy": 1.0
+    },
+    {
+      "method_name": "semantic",
+      "count": 35,
+      "correct": 23,
+      "avg_confidence": 0.711,
+      "accuracy": 0.657
+    },
+    {
+      "method_name": "llm",
+      "count": 35,
+      "correct": 35,
+      "avg_confidence": 0.838,
+      "accuracy": 1.0
+    }
+  ],
+  "failure_cases": [
+    {
+      "field_name": "study_name",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.48,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "disease",
+      "expected_value": null,
+      "predicted_value": "CODE_DISEASE",
+      "confidence": 0.58,
+      "failure_type": "low_confidence",
+      "proposed_fix": "Check confidence threshold"
+    },
+    {
+      "field_name": "non_westernized",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.5,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "minimum_read_length",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.45,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "BMI",
+      "expected_value": null,
+      "predicted_value": "CODE_BMI",
+      "confidence": 0.59,
+      "failure_type": "low_confidence",
+      "proposed_fix": "Check confidence threshold"
+    },
+    {
+      "field_name": "feeding_practice",
+      "expected_value": null,
+      "predicted_value": "CODE_FEEDING_",
+      "confidence": 0.57,
+      "failure_type": "low_confidence",
+      "proposed_fix": "Check confidence threshold"
+    },
+    {
+      "field_name": "birth_weight",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.44,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "albumine",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.45,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "urea_nitrogen",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.48,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "menopausal_status",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.38,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "hdl",
+      "expected_value": null,
+      "predicted_value": "CODE_HDL",
+      "confidence": 0.59,
+      "failure_type": "low_confidence",
+      "proposed_fix": "Check confidence threshold"
+    },
+    {
+      "field_name": "smoker",
+      "expected_value": null,
+      "predicted_value": "CODE_SMOKER",
+      "confidence": 0.54,
+      "failure_type": "low_confidence",
+      "proposed_fix": "Check confidence threshold"
+    },
+    {
+      "field_name": "PPD_D",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.37,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "HBI",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.46,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "creatinine",
+      "expected_value": null,
+      "predicted_value": "CODE_CREATINI",
+      "confidence": 0.56,
+      "failure_type": "low_confidence",
+      "proposed_fix": "Check confidence threshold"
+    },
+    {
+      "field_name": "FMT_role",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.4,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "insulin_cat",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.49,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "fgf_19",
+      "expected_value": null,
+      "predicted_value": "CODE_FGF_19",
+      "confidence": 0.53,
+      "failure_type": "low_confidence",
+      "proposed_fix": "Check confidence threshold"
+    },
+    {
+      "field_name": "hitchip_probe_class",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.49,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    },
+    {
+      "field_name": "fasting_glucose",
+      "expected_value": null,
+      "predicted_value": "NO_MATCH",
+      "confidence": 0.41,
+      "failure_type": "no_match",
+      "proposed_fix": "Manual curation needed"
+    }
+  ],
+  "metadata": {
+    "execution_type": "synthetic",
+    "execution_time_seconds": 0,
+    "total_records_evaluated": 141,
+    "evaluation_date": "2026-03-06T23:27:31.440940"
+  }
+}
