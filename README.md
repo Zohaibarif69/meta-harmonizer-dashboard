@@ -8,7 +8,7 @@
 
 cBioPortal hosts 400+ cancer genomics studies. Each study arrives with clinical metadata in different shapes — age fields named `AGE`, `AGE_AT_DIAGNOSIS`, `DIAGNOSIS_AGE`; treatment as `XRT`, `Radiation`, `RADIO_THERAPY`, `Rad`. Manual harmonization does not scale.
 
-This repository delivers a **complete, production-ready harmonization system** built on top of the original [MetaHarmonizer](https://github.com/shbrief/MetaHarmonizer) pipeline, consisting of:
+This repository delivers a **comprehensive prototype system for automated metadata harmonization** built on top of the original [MetaHarmonizer](https://github.com/shbrief/MetaHarmonizer) pipeline, consisting of:
 
 | Layer | What was built |
 |---|---|
@@ -79,8 +79,8 @@ jupyter notebook analysis/eda.ipynb
 
 ## 2. EDA Findings
 
-Notebook: `MetaHarmonizer/analysis/eda.ipynb`  
-Dataset: `metadata_samples/new_meta.csv` (raw incoming study) vs `metadata_samples/curated_meta.csv` (gold standard)
+Notebook: [MetaHarmonizer/analysis/eda.ipynb](MetaHarmonizer/analysis/eda.ipynb)  
+Dataset: [metadata_samples/new_meta.csv](metadata_samples/new_meta.csv) (raw incoming study) vs [metadata_samples/curated_meta.csv](metadata_samples/curated_meta.csv) (gold standard)
 
 ### Raw Metadata (`new_meta.csv`) — 707 samples × 141 columns
 
@@ -139,8 +139,8 @@ This suggests batch-aware harmonization strategies could significantly improve r
 
 ## 3. Mapper Evaluation
 
-Script: `MetaHarmonizer/evaluation/run_evaluation.py`  
-Results: `MetaHarmonizer/analysis/mapper_evaluation_results.csv`
+Script: [MetaHarmonizer/evaluation/run_evaluation.py](MetaHarmonizer/evaluation/run_evaluation.py)  
+Results: [MetaHarmonizer/analysis/mapper_evaluation_results.csv](MetaHarmonizer/analysis/mapper_evaluation_results.csv)
 
 Evaluation was run on the **full `new_meta.csv` dataset — all 141 raw metadata columns** against the 37-column curated gold standard. Of those 141 columns, 26 have a valid mapping to the standard schema; the remaining 115 should produce `NO_MATCH`.
 
@@ -346,8 +346,8 @@ MetaHarmonizer/
 │   │   ├── field_suggester/        # Semantic clustering
 │   │   └── utils/
 │   ├── analysis/
-│   │   ├── eda.ipynb               # 12-section EDA
-│   │   ├── mapper_evaluation.ipynb # Benchmarking notebook
+│   │   ├── [eda.ipynb](MetaHarmonizer/analysis/eda.ipynb)               # 12-section EDA
+│   │   ├── [mapper_evaluation.ipynb](MetaHarmonizer/analysis/mapper_evaluation.ipynb) # Benchmarking notebook
 │   │   └── *.csv / *.png           # Generated reports & plots
 │   ├── metadata_samples/
 │   │   ├── new_meta.csv            # Raw incoming study (707 × 141)
@@ -356,9 +356,12 @@ MetaHarmonizer/
 │       └── schema_mapping_evaluation.py
 │
 └── docs/
-    ├── SYSTEM_ARCHITECTURE.md
-    ├── CURATOR_WORKFLOW.md
-    └── UI_WIREFRAMES.md
+    ├── [TECHNICAL_ARCHITECTURE.md](docs/TECHNICAL_ARCHITECTURE.md)
+    ├── [KEY_FEATURES.md](docs/KEY_FEATURES.md)
+    ├── [USER_WORKFLOW.md](docs/USER_WORKFLOW.md)
+    ├── [INTEGRATION_PLAN.md](docs/INTEGRATION_PLAN.md)
+    ├── [MAPPER_EVALUATION.md](docs/MAPPER_EVALUATION.md)
+    └── [screenshots/](docs/screenshots/) (23 dashboard screenshots)
 ```
 
 ---
