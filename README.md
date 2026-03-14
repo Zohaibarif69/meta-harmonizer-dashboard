@@ -79,7 +79,7 @@ jupyter notebook analysis/eda.ipynb
 
 ## 2. EDA Findings
 
-Notebook: [MetaHarmonizer/analysis/eda.ipynb](MetaHarmonizer/analysis/eda.ipynb)  
+Notebook: [MetaHarmonizer/analysis/eda.ipynb](https://nbviewer.jupyter.org/github/Zohaibarif69/meta-harmonizer-dashboard/blob/main/MetaHarmonizer/analysis/eda.ipynb)  
 Dataset: [metadata_samples/new_meta.csv](metadata_samples/new_meta.csv) (raw incoming study) vs [metadata_samples/curated_meta.csv](metadata_samples/curated_meta.csv) (gold standard)
 
 ### Raw Metadata (`new_meta.csv`) — 707 samples × 141 columns
