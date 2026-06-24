@@ -1,6 +1,6 @@
 # MetaHarmonizer — Automated Clinical Metadata Harmonization Dashboard
 
-> **GSoC 2026 Submission** · Issue [#136](https://github.com/shbrief/MetaHarmonizer/issues/136) · Applicant Work Sample
+> **GSoC 2026 Submission** · Issue [#136](https://github.com/shbrief/MetaHarmonizer/issues/136) · 
 
 ---
 
@@ -232,20 +232,8 @@ The dashboard supports the full cBioPortal curator review workflow:
 **Home — entry point with Manual Curation and Analytics Dashboard cards**
 ![Home](docs/screenshots/01_home.PNG)
 
-**Analytics Overview — 6 key metric cards: 87% accuracy, 100 mappings, 0.83 mean confidence**
-![Analytics Overview](docs/screenshots/02_analytics_overview.PNG)
-
-**Confidence Score Distribution — Excellent / Good / Moderate / Low / Very Low buckets**
-![Confidence Distribution](docs/screenshots/05_confidence_distribution_chart.PNG)
-
 **Method Breakdown Table — Count, Avg Score, Valid%, Quality rating for all 4 methods**
 ![Method Breakdown](docs/screenshots/10_method_breakdown_table.PNG)
-
-**Failure Categories & Remediation — quality improvement plan with fix suggestions**
-![Failure Analysis](docs/screenshots/13_failure_categories_remediation.PNG)
-
-**Run Schema Mapper — job submission form with input file, method selection, parameters**
-![Run Mapper](docs/screenshots/17_run_mapper_form.PNG)
 
 **Upload Metadata — drag-and-drop CSV upload; shows new_meta.csv (141 fields) loaded**
 ![Upload Metadata](docs/screenshots/19_upload_metadata.PNG)
@@ -255,30 +243,6 @@ The dashboard supports the full cBioPortal curator review workflow:
 
 **Curation Progress — 5/37 fields (13%), Approved / Pending / Unmapped breakdown, recent actions log**
 ![Curation Progress](docs/screenshots/23_curation_progress_modal.PNG)
-
-*Full screenshot gallery (23 images): [`docs/screenshots/`](docs/screenshots/)*
-
-### Mapping Review Interface
-- **Side-by-side view:** raw field name left, top-5 suggested mappings right with confidence scores
-- **Sample values panel:** shows actual data values to help curators validate matches
-- **Confidence colour coding:** green (≥0.85), amber (0.70–0.85), red (<0.70)
-
-### Curator Actions
-- **Accept** — approve the top suggestion
-- **Reject** — flag as unmappable
-- **Edit** — manually enter a standard field name + ontology term
-- **Manual input** — free-text entry with ontology code lookup
-- **Bulk approve** — auto-accept all fields above a configurable confidence threshold (default 0.85)
-
-### Progress & Quality Tracking
-- Live progress bar: reviewed / total fields
-- Per-confidence-tier breakdown
-- Auto-refresh every 10 seconds
-
-### Export
-- Harmonized metadata CSV (cBioPortal-ready format)
-- Mapping report JSON (includes confidence, method, curator decision, timestamp)
-- Invalid/flagged mappings list for manual review
 
 ---
 
@@ -396,21 +360,3 @@ cBioPortal Data Loading Pipeline
 
 **API-first design** means the dashboard is optional — the REST endpoints can be called directly from cBioPortal's existing Python/Java data loading scripts with no UI dependency.
 
----
-
-## Results Summary
-
-| Deliverable | Status | Key Metric |
-|---|---|---|
-| 12-section EDA of real cBioPortal metadata | ✅ Complete | 707 samples · 141 fields · 83.6% sparsity |
-| Mapper evaluation — P/R/F1 on all 141 fields | ✅ Complete | **F1 = 0.806** · Precision 0.694 · Recall 0.962 |
-| Exact-match stage | ✅ Complete | **Precision 1.000** · F1 0.595 |
-| Semantic stage false-positive rate | ✅ Measured | 10/19 (→ motivates human-in-the-loop curator) |
-| FastAPI backend with async jobs + session DB | ✅ Complete | 12 REST endpoints · SQLite audit trail |
-| React curator dashboard (full workflow) | ✅ Complete | Session create → review → bulk approve → export |
-| System architecture & API documentation | ✅ Complete | OpenAPI spec at `/docs` |
-| cBioPortal integration plan | ✅ Complete | 5-step dataflow in §9 |
-
----
-
-*Contact: submission for GSoC 2026 Issue #136 — Automated Clinical Metadata Harmonization Dashboard*
